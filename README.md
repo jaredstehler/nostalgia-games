@@ -16,3 +16,9 @@ URL from a web server for it to work properly; if you run OSX you can cd into th
     python -m SimpleHTTPServer 8111
     
 and then open up http://localhost:8111 in a browser.
+
+Note also that instead, you can run this from the appletviewer standalone utility bundled with the JDK:
+
+    appletviewer index.html
+    
+(run that also from within target/classes)
