@@ -1,9 +1,4 @@
-/*
-	Street Rider v1.5 - Release 2
-	Copyright 1999 J&E Bicycles
-	All Rights Reserved.
-	3.01.99
-*/
+
 
 import java.awt.image.*;
 import java.awt.*;
@@ -111,159 +106,159 @@ public class StreetRider extends java.applet.Applet implements Runnable{
 
 //	Load all necessary images
 
-		Title[0] = getImage(getCodeBase(), "title_1.jpg");
+		Title[0] = getImage(getCodeBase(), "streetrider/title_1.jpg");
 
-		loadingScreen = getImage(getCodeBase(), "loading_screen.jpg");
-		levelComplete = getImage(getCodeBase(), "level_complete.jpg");
-		youWin = getImage(getCodeBase(), "you_win.jpg");
-		win_scn = getImage(getCodeBase(), "win_screen_1.jpg");
-		game_over = getImage(getCodeBase(), "game_over.jpg");
-		displayimage = getImage(getCodeBase(), "display_scn.jpg");
+		loadingScreen = getImage(getCodeBase(), "streetrider/loading_screen.jpg");
+		levelComplete = getImage(getCodeBase(), "streetrider/level_complete.jpg");
+		youWin = getImage(getCodeBase(), "streetrider/you_win.jpg");
+		win_scn = getImage(getCodeBase(), "streetrider/win_screen_1.jpg");
+		game_over = getImage(getCodeBase(), "streetrider/game_over.jpg");
+		displayimage = getImage(getCodeBase(), "streetrider/display_scn.jpg");
 
-		count[1] = getImage(getCodeBase(), "1.gif");
-		count[2] = getImage(getCodeBase(), "2.gif");
-		count[3] = getImage(getCodeBase(), "3.gif");
-		count_go = getImage(getCodeBase(), "go.gif");
+		count[1] = getImage(getCodeBase(), "streetrider/1.gif");
+		count[2] = getImage(getCodeBase(), "streetrider/2.gif");
+		count[3] = getImage(getCodeBase(), "streetrider/3.gif");
+		count_go = getImage(getCodeBase(), "streetrider/go.gif");
 
-		shadow = getImage(getCodeBase(), "shadow.gif");
-		dirt = getImage(getCodeBase(), "dirt.jpg");
+		shadow = getImage(getCodeBase(), "streetrider/shadow.gif");
+		dirt = getImage(getCodeBase(), "streetrider/dirt.jpg");
 
-		highScoresBG = getImage(getCodeBase(), "clouds.jpg");
+		highScoresBG = getImage(getCodeBase(), "streetrider/clouds.jpg");
 
-		Street[0] = getImage(getCodeBase(), "street_1.jpg");
-		Street[1] = getImage(getCodeBase(), "street_2.jpg");
-		Sidewalk[0] = getImage(getCodeBase(), "sidewalk_1.jpg");
-		Sidewalk[1] = getImage(getCodeBase(), "sidewalk_2.jpg");
+		Street[0] = getImage(getCodeBase(), "streetrider/street_1.jpg");
+		Street[1] = getImage(getCodeBase(), "streetrider/street_2.jpg");
+		Sidewalk[0] = getImage(getCodeBase(), "streetrider/sidewalk_1.jpg");
+		Sidewalk[1] = getImage(getCodeBase(), "streetrider/sidewalk_2.jpg");
 
-		Street[2] = getImage(getCodeBase(), "roof_top.jpg");
-		Street[3] = getImage(getCodeBase(), "roof_bottom.jpg");
-		Street[4] = getImage(getCodeBase(), "roof_middle.jpg");
+		Street[2] = getImage(getCodeBase(), "streetrider/roof_top.jpg");
+		Street[3] = getImage(getCodeBase(), "streetrider/roof_bottom.jpg");
+		Street[4] = getImage(getCodeBase(), "streetrider/roof_middle.jpg");
 
-		Bike[0] = getImage(getCodeBase(), "bike_1.gif");
-		Bike[1] = getImage(getCodeBase(), "bike_2.gif");
-		Bike[2] = getImage(getCodeBase(), "bike_3.gif");
-		Bike[3] = getImage(getCodeBase(), "bike_4.gif");
-		Bike[4] = getImage(getCodeBase(), "bike_5.gif");
-		Bike[5] = getImage(getCodeBase(), "bike_6.gif");
-		Bike[6] = getImage(getCodeBase(), "bike_7.gif");
-		Bike[7] = getImage(getCodeBase(), "bike_8.gif");
-		Bike[8] = getImage(getCodeBase(), "bike_9.gif");
-		Bike[9] = getImage(getCodeBase(), "bike_10.gif");
-		Bike[10] = getImage(getCodeBase(), "bike_11.gif");
+		Bike[0] = getImage(getCodeBase(), "streetrider/bike_1.gif");
+		Bike[1] = getImage(getCodeBase(), "streetrider/bike_2.gif");
+		Bike[2] = getImage(getCodeBase(), "streetrider/bike_3.gif");
+		Bike[3] = getImage(getCodeBase(), "streetrider/bike_4.gif");
+		Bike[4] = getImage(getCodeBase(), "streetrider/bike_5.gif");
+		Bike[5] = getImage(getCodeBase(), "streetrider/bike_6.gif");
+		Bike[6] = getImage(getCodeBase(), "streetrider/bike_7.gif");
+		Bike[7] = getImage(getCodeBase(), "streetrider/bike_8.gif");
+		Bike[8] = getImage(getCodeBase(), "streetrider/bike_9.gif");
+		Bike[9] = getImage(getCodeBase(), "streetrider/bike_10.gif");
+		Bike[10] = getImage(getCodeBase(), "streetrider/bike_11.gif");
 		
-		lose[0] = getImage(getCodeBase(), "crushedbike.gif");
-		lose[1] = getImage(getCodeBase(), "lose_1.gif");
-		lose[2] = getImage(getCodeBase(), "lose_2.gif");
-		lose[3] = getImage(getCodeBase(), "lose_3.gif");
-		lose[4] = getImage(getCodeBase(), "lose_4.gif");
-		lose[5] = getImage(getCodeBase(), "lose_5.gif");
-		lose[6] = getImage(getCodeBase(), "lose_6.gif");
+		lose[0] = getImage(getCodeBase(), "streetrider/crushedbike.gif");
+		lose[1] = getImage(getCodeBase(), "streetrider/lose_1.gif");
+		lose[2] = getImage(getCodeBase(), "streetrider/lose_2.gif");
+		lose[3] = getImage(getCodeBase(), "streetrider/lose_3.gif");
+		lose[4] = getImage(getCodeBase(), "streetrider/lose_4.gif");
+		lose[5] = getImage(getCodeBase(), "streetrider/lose_5.gif");
+		lose[6] = getImage(getCodeBase(), "streetrider/lose_6.gif");
 
-		win[0] = getImage(getCodeBase(), "win_1.gif");
-		win[1] = getImage(getCodeBase(), "win_2.gif");
+		win[0] = getImage(getCodeBase(), "streetrider/win_1.gif");
+		win[1] = getImage(getCodeBase(), "streetrider/win_2.gif");
 		
 	
-		Buildings[0] = getImage(getCodeBase(), "city_1.jpg");	
-		Buildings[1] = getImage(getCodeBase(), "city_2.jpg");	
-		Buildings[2] = getImage(getCodeBase(), "city_3.jpg");	
-		Buildings[3] = getImage(getCodeBase(), "city_4.jpg");	
-		Buildings[4] = getImage(getCodeBase(), "city_5.jpg");	
-		Buildings[5] = getImage(getCodeBase(), "city_6.jpg");	
-		Buildings[6] = getImage(getCodeBase(), "city_7.jpg");	
-		Buildings[7] = getImage(getCodeBase(), "city_8.jpg");	
-		Buildings[8] = getImage(getCodeBase(), "city_9.jpg");	
-		Buildings[9] = getImage(getCodeBase(), "city_10.jpg");	
+		Buildings[0] = getImage(getCodeBase(), "streetrider/city_1.jpg");	
+		Buildings[1] = getImage(getCodeBase(), "streetrider/city_2.jpg");	
+		Buildings[2] = getImage(getCodeBase(), "streetrider/city_3.jpg");	
+		Buildings[3] = getImage(getCodeBase(), "streetrider/city_4.jpg");	
+		Buildings[4] = getImage(getCodeBase(), "streetrider/city_5.jpg");	
+		Buildings[5] = getImage(getCodeBase(), "streetrider/city_6.jpg");	
+		Buildings[6] = getImage(getCodeBase(), "streetrider/city_7.jpg");	
+		Buildings[7] = getImage(getCodeBase(), "streetrider/city_8.jpg");	
+		Buildings[8] = getImage(getCodeBase(), "streetrider/city_9.jpg");	
+		Buildings[9] = getImage(getCodeBase(), "streetrider/city_10.jpg");	
 	
-		Buildings[10] = getImage(getCodeBase(), "school_1.jpg");	
-		Buildings[11] = getImage(getCodeBase(), "school_2.jpg");	
-		Buildings[12] = getImage(getCodeBase(), "school_3.jpg");	
-		Buildings[13] = getImage(getCodeBase(), "school_4.jpg");	
-		Buildings[14] = getImage(getCodeBase(), "school_5.jpg");	
-		Buildings[15] = getImage(getCodeBase(), "school_6.jpg");	
-		Buildings[16] = getImage(getCodeBase(), "school_7.jpg");	
-		Buildings[17] = getImage(getCodeBase(), "school_8.jpg");	
-		Buildings[18] = getImage(getCodeBase(), "school_9.jpg");	
-		Buildings[19] = getImage(getCodeBase(), "school_10.jpg");	
+		Buildings[10] = getImage(getCodeBase(), "streetrider/school_1.jpg");	
+		Buildings[11] = getImage(getCodeBase(), "streetrider/school_2.jpg");	
+		Buildings[12] = getImage(getCodeBase(), "streetrider/school_3.jpg");	
+		Buildings[13] = getImage(getCodeBase(), "streetrider/school_4.jpg");	
+		Buildings[14] = getImage(getCodeBase(), "streetrider/school_5.jpg");	
+		Buildings[15] = getImage(getCodeBase(), "streetrider/school_6.jpg");	
+		Buildings[16] = getImage(getCodeBase(), "streetrider/school_7.jpg");	
+		Buildings[17] = getImage(getCodeBase(), "streetrider/school_8.jpg");	
+		Buildings[18] = getImage(getCodeBase(), "streetrider/school_9.jpg");	
+		Buildings[19] = getImage(getCodeBase(), "streetrider/school_10.jpg");	
 		
-		Buildings[20] = getImage(getCodeBase(), "park_1.jpg");	
-		Buildings[21] = getImage(getCodeBase(), "park_2.jpg");	
-		Buildings[22] = getImage(getCodeBase(), "park_3.jpg");	
-		Buildings[23] = getImage(getCodeBase(), "park_4.jpg");	
-		Buildings[24] = getImage(getCodeBase(), "park_5.jpg");	
-		Buildings[25] = getImage(getCodeBase(), "park_6.jpg");	
-		Buildings[26] = getImage(getCodeBase(), "park_7.jpg");	
-		Buildings[27] = getImage(getCodeBase(), "park_8.jpg");	
-		Buildings[28] = getImage(getCodeBase(), "park_9.jpg");	
-		Buildings[29] = getImage(getCodeBase(), "park_10.jpg");	
+		Buildings[20] = getImage(getCodeBase(), "streetrider/park_1.jpg");	
+		Buildings[21] = getImage(getCodeBase(), "streetrider/park_2.jpg");	
+		Buildings[22] = getImage(getCodeBase(), "streetrider/park_3.jpg");	
+		Buildings[23] = getImage(getCodeBase(), "streetrider/park_4.jpg");	
+		Buildings[24] = getImage(getCodeBase(), "streetrider/park_5.jpg");	
+		Buildings[25] = getImage(getCodeBase(), "streetrider/park_6.jpg");	
+		Buildings[26] = getImage(getCodeBase(), "streetrider/park_7.jpg");	
+		Buildings[27] = getImage(getCodeBase(), "streetrider/park_8.jpg");	
+		Buildings[28] = getImage(getCodeBase(), "streetrider/park_9.jpg");	
+		Buildings[29] = getImage(getCodeBase(), "streetrider/park_10.jpg");	
 
-		Buildings[30] = getImage(getCodeBase(), "forest_1.jpg");
+		Buildings[30] = getImage(getCodeBase(), "streetrider/forest_1.jpg");
 
-		Buildings[31] = getImage(getCodeBase(), "powerlines1.jpg");
-		Buildings[32] = getImage(getCodeBase(), "powerlines2.jpg");
-		Buildings[33] = getImage(getCodeBase(), "powerlines3.jpg");
-		Buildings[34] = getImage(getCodeBase(), "powerlines4.jpg");
+		Buildings[31] = getImage(getCodeBase(), "streetrider/powerlines1.jpg");
+		Buildings[32] = getImage(getCodeBase(), "streetrider/powerlines2.jpg");
+		Buildings[33] = getImage(getCodeBase(), "streetrider/powerlines3.jpg");
+		Buildings[34] = getImage(getCodeBase(), "streetrider/powerlines4.jpg");
 
-		Buildings[35] = getImage(getCodeBase(), "Clouds_1.jpg");
-		Buildings[36] = getImage(getCodeBase(), "Clouds_2.jpg");
-		Buildings[37] = getImage(getCodeBase(), "Clouds_3.jpg");
-		Buildings[38] = getImage(getCodeBase(), "Clouds_4.jpg");
-		Buildings[39] = getImage(getCodeBase(), "Clouds_5.jpg");
-		Buildings[40] = getImage(getCodeBase(), "Clouds_6.jpg");
-		Buildings[41] = getImage(getCodeBase(), "Clouds_7.jpg");
-		Buildings[42] = getImage(getCodeBase(), "Clouds_8.jpg");
+		Buildings[35] = getImage(getCodeBase(), "streetrider/Clouds_1.jpg");
+		Buildings[36] = getImage(getCodeBase(), "streetrider/Clouds_2.jpg");
+		Buildings[37] = getImage(getCodeBase(), "streetrider/Clouds_3.jpg");
+		Buildings[38] = getImage(getCodeBase(), "streetrider/Clouds_4.jpg");
+		Buildings[39] = getImage(getCodeBase(), "streetrider/Clouds_5.jpg");
+		Buildings[40] = getImage(getCodeBase(), "streetrider/Clouds_6.jpg");
+		Buildings[41] = getImage(getCodeBase(), "streetrider/Clouds_7.jpg");
+		Buildings[42] = getImage(getCodeBase(), "streetrider/Clouds_8.jpg");
 
-		Ramps[0] = getImage(getCodeBase(), "jump_small.gif");
-		Ramps[1] = getImage(getCodeBase(), "jump_big.gif");
-		Ramps[2] = getImage(getCodeBase(), "dirt_small.gif");
-		Ramps[3] = getImage(getCodeBase(), "dirt_big.gif");
+		Ramps[0] = getImage(getCodeBase(), "streetrider/jump_small.gif");
+		Ramps[1] = getImage(getCodeBase(), "streetrider/jump_big.gif");
+		Ramps[2] = getImage(getCodeBase(), "streetrider/dirt_small.gif");
+		Ramps[3] = getImage(getCodeBase(), "streetrider/dirt_big.gif");
 
-		Obstacles[0] = getImage(getCodeBase(), "dirt_big_catch.gif");
-		Obstacles[1] = getImage(getCodeBase(), "trash_1.gif");
-		Obstacles[2] = getImage(getCodeBase(), "rock_1.gif");
-		Obstacles[3] = getImage(getCodeBase(), "open_manhole.gif");
-		Obstacles[4] = getImage(getCodeBase(), "log_1.gif");
-		Obstacles[5] = getImage(getCodeBase(), "log_2.gif");
-		Obstacles[6] = getImage(getCodeBase(), "log_3.gif");
-		Obstacles[7] = getImage(getCodeBase(), "log_4.gif");
-		Obstacles[8] = getImage(getCodeBase(), "stick_1.gif");
-		Obstacles[9] = getImage(getCodeBase(), "stick_2.gif");
-		Obstacles[10] = getImage(getCodeBase(), "bat.gif");
-		Obstacles[11] = getImage(getCodeBase(), "bucket.gif");
-		Obstacles[12] = getImage(getCodeBase(), "box.gif");
-		Obstacles[13] = getImage(getCodeBase(), "cinder_block.gif");
-		Obstacles[14] = getImage(getCodeBase(), "cone.gif");
-		Obstacles[15] = getImage(getCodeBase(), "glass.gif");
-		Obstacles[16] = getImage(getCodeBase(), "paper.gif");
-		Obstacles[17] = getImage(getCodeBase(), "plastic.gif");
-		Obstacles[18] = getImage(getCodeBase(), "pot_hole.gif");
-		Obstacles[19] = getImage(getCodeBase(), "object_20.gif");
-		Obstacles[20] = getImage(getCodeBase(), "shrubbery.gif");
-		Obstacles[21] = getImage(getCodeBase(), "sign.gif");
-		Obstacles[22] = getImage(getCodeBase(), "road_construction.gif");
-		Obstacles[23] = getImage(getCodeBase(), "cat.gif");
-		Obstacles[24] = getImage(getCodeBase(), "wakeupbumps.jpg");
-		Obstacles[25] = getImage(getCodeBase(), "badramp.gif");
+		Obstacles[0] = getImage(getCodeBase(), "streetrider/dirt_big_catch.gif");
+		Obstacles[1] = getImage(getCodeBase(), "streetrider/trash_1.gif");
+		Obstacles[2] = getImage(getCodeBase(), "streetrider/rock_1.gif");
+		Obstacles[3] = getImage(getCodeBase(), "streetrider/open_manhole.gif");
+		Obstacles[4] = getImage(getCodeBase(), "streetrider/log_1.gif");
+		Obstacles[5] = getImage(getCodeBase(), "streetrider/log_2.gif");
+		Obstacles[6] = getImage(getCodeBase(), "streetrider/log_3.gif");
+		Obstacles[7] = getImage(getCodeBase(), "streetrider/log_4.gif");
+		Obstacles[8] = getImage(getCodeBase(), "streetrider/stick_1.gif");
+		Obstacles[9] = getImage(getCodeBase(), "streetrider/stick_2.gif");
+		Obstacles[10] = getImage(getCodeBase(), "streetrider/bat.gif");
+		Obstacles[11] = getImage(getCodeBase(), "streetrider/bucket.gif");
+		Obstacles[12] = getImage(getCodeBase(), "streetrider/box.gif");
+		Obstacles[13] = getImage(getCodeBase(), "streetrider/cinder_block.gif");
+		Obstacles[14] = getImage(getCodeBase(), "streetrider/cone.gif");
+		Obstacles[15] = getImage(getCodeBase(), "streetrider/glass.gif");
+		Obstacles[16] = getImage(getCodeBase(), "streetrider/paper.gif");
+		Obstacles[17] = getImage(getCodeBase(), "streetrider/plastic.gif");
+		Obstacles[18] = getImage(getCodeBase(), "streetrider/pot_hole.gif");
+		Obstacles[19] = getImage(getCodeBase(), "streetrider/object_20.gif");
+		Obstacles[20] = getImage(getCodeBase(), "streetrider/shrubbery.gif");
+		Obstacles[21] = getImage(getCodeBase(), "streetrider/sign.gif");
+		Obstacles[22] = getImage(getCodeBase(), "streetrider/road_construction.gif");
+		Obstacles[23] = getImage(getCodeBase(), "streetrider/cat.gif");
+		Obstacles[24] = getImage(getCodeBase(), "streetrider/wakeupbumps.jpg");
+		Obstacles[25] = getImage(getCodeBase(), "streetrider/badramp.gif");
 
-		Obstacles[26] = getImage(getCodeBase(), "grate.gif");
-		Obstacles[27] = getImage(getCodeBase(), "indent1.jpg");
-		Obstacles[28] = getImage(getCodeBase(), "indent2.jpg");
-		Obstacles[29] = getImage(getCodeBase(), "pipes.gif");
-		Obstacles[30] = getImage(getCodeBase(), "smokestack.gif");
-		Obstacles[31] = getImage(getCodeBase(), "vent.gif");
-		Obstacles[32] = getImage(getCodeBase(), "airvent.gif");
-		Obstacles[33] = getImage(getCodeBase(), "spinnything.gif");
-		Obstacles[34] = getImage(getCodeBase(), "stairs.gif");
-		Obstacles[35] = getImage(getCodeBase(), "dish.gif");
+		Obstacles[26] = getImage(getCodeBase(), "streetrider/grate.gif");
+		Obstacles[27] = getImage(getCodeBase(), "streetrider/indent1.jpg");
+		Obstacles[28] = getImage(getCodeBase(), "streetrider/indent2.jpg");
+		Obstacles[29] = getImage(getCodeBase(), "streetrider/pipes.gif");
+		Obstacles[30] = getImage(getCodeBase(), "streetrider/smokestack.gif");
+		Obstacles[31] = getImage(getCodeBase(), "streetrider/vent.gif");
+		Obstacles[32] = getImage(getCodeBase(), "streetrider/airvent.gif");
+		Obstacles[33] = getImage(getCodeBase(), "streetrider/spinnything.gif");
+		Obstacles[34] = getImage(getCodeBase(), "streetrider/stairs.gif");
+		Obstacles[35] = getImage(getCodeBase(), "streetrider/dish.gif");
 
-		Obstacles[36] = getImage(getCodeBase(), "split_roof_1.jpg");
-		Obstacles[37] = getImage(getCodeBase(), "split_roof_4.jpg");
-		Obstacles[38] = getImage(getCodeBase(), "split_roof_5.jpg");
-		Obstacles[39] = getImage(getCodeBase(), "split_roof_8.jpg");
+		Obstacles[36] = getImage(getCodeBase(), "streetrider/split_roof_1.jpg");
+		Obstacles[37] = getImage(getCodeBase(), "streetrider/split_roof_4.jpg");
+		Obstacles[38] = getImage(getCodeBase(), "streetrider/split_roof_5.jpg");
+		Obstacles[39] = getImage(getCodeBase(), "streetrider/split_roof_8.jpg");
 
-		Obstacles[40] = getImage(getCodeBase(), "split_roof_2.jpg");
-		Obstacles[41] = getImage(getCodeBase(), "split_roof_3.jpg");
-		Obstacles[42] = getImage(getCodeBase(), "split_roof_6.jpg");
-		Obstacles[43] = getImage(getCodeBase(), "split_roof_7.jpg");
+		Obstacles[40] = getImage(getCodeBase(), "streetrider/split_roof_2.jpg");
+		Obstacles[41] = getImage(getCodeBase(), "streetrider/split_roof_3.jpg");
+		Obstacles[42] = getImage(getCodeBase(), "streetrider/split_roof_6.jpg");
+		Obstacles[43] = getImage(getCodeBase(), "streetrider/split_roof_7.jpg");
 
 
 		tracker = new MediaTracker(this);		

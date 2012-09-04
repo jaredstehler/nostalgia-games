@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Organization">
+<head>
+<meta charset="utf-8">
+<title>Nostalgia Games Arcade</title>
+<meta name="author" content="Jared Stehler">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/avgrund.css" rel="stylesheet">
+<style>
+body {
+	padding-top: 55px;
+}
+
+.footer {
+	padding: 70px 0;
+	margin-top: 70px;
+	border-top: 1px solid #E5E5E5;
+	background-color: whiteSmoke;
+}
+
+@media ( max-width :979px) {
+	body {
+		padding-top: 0px;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Nostalgia Games Arcade</a>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<p class="well">Here are some of the games I made back in high
+			school. They're all Java Applets (ick!) but should still run on the
+			latest JRE.</p>
+
+		<div class="row-fluid">
+			<ul class="thumbnails">
+				<li class="span4">
+					<div class="thumbnail">
+						<img src="streetrider/title_1.jpg" alt="">
+						<h3>Street Rider <a class="btn btn-success pull-right play" data-game="streetrider">Play</a></h3>
+						<p>The object of the game is to score as many points as you
+							can. You earn points by hopping over obstacles. Small Ramps jump
+							you 1 space, while big ramps jump you 3 spaces.</p>
+					</div>
+				</li>
+				<li class="span4">
+					<div class="thumbnail">
+						<img src="dirtracer/title.jpg" alt="">
+						<h3>Dirt Racer <a class="btn btn-success pull-right play" data-game="dirtracer">Play</a></h3>
+						<p>Top-down scrolling game; dodge the obstacles and beat the
+							times.</p>
+					</div>
+				</li>
+				<li class="span4">
+					<div class="thumbnail">
+						<img src="punishtheposer/title.jpg" alt="">
+						<h3>Punish the Poser <a class="btn btn-success pull-right play" data-game="punishtheposer">Play</a></h3>
+						<p>Throw rocks at the "poser".</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="row-fluid">
+			<ul class="thumbnails">
+				<li class="span4">
+					<div class="thumbnail">
+						<img src="xup/Title_screen.jpg" alt="">
+						<h3>X-Up! <a class="btn btn-success pull-right play" data-game="xup">Play</a></h3>
+						<p>Our most ambitious project; you perform tricks by entering
+							key-combos in the air. We posed a GI-Joe action figure on a
+							finger bike to get the graphics for it.</p>
+					</div>
+				</li>
+				<li class="span4">
+					<div class="thumbnail">
+						<img src="whackamole/title.jpg" alt="">
+						<h3>Whack-a-mole <a class="btn btn-success pull-right play" data-game="whackamole">Play</a></h3>
+						<p>For whatever reason, I used a really creepy mole picture
+							for this one.</p>
+					</div>
+				</li>
+				<li class="span4">
+					<div class="thumbnail">
+						<img src="breakout/title.jpg" alt="">
+						<h3>Breakout <a class="btn btn-success pull-right play" data-game="breakout">Play</a></h3>
+						<p>It's the classic ball-breaker game.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="pull-right">
+				<a href="#">Back to top</a>
+			</p>
+			<p>
+				Designed and built by <a href="http://twitter.com/jstehler"
+					target="_blank">@jstehler</a> [ <a
+					href="http://abstractbits.blogger.com">blog</a>, <a
+					href="http://github.com/jaredstehler">github</a> ].
+			</p>
+			<p>
+				Code licensed under the <a
+					href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache
+					License v2.0</a>. Graphics licensed under <a
+					href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+			</p>
+			<p>
+				Icons from <a href="http://glyphicons.com">Glyphicons Free</a>,
+				licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC
+					BY 3.0</a>.
+			</p>
+		</div>
+	</footer>
+
+	<a href="https://github.com/jaredstehler/nostalgia-games"><img
+		style="position: absolute; top: 0; right: 0; border: 0; z-index: 10000"
+		src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+		alt="Fork me on GitHub"></a>
+
+	<div class="avgrund-cover"></div>
+
+	<aside class="avgrund-popup game-container" style="width: 340px; height: 180px">
+		<h2>Title</h2>
+		<div class="content"></div>
+		<p class="small">You can hit ESC or click outside to close the game.</p>
+	</aside>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/avgrund.js"></script>
+	<script src="js/arcade.js"></script>
+</body>
+</html>
