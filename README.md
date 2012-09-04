@@ -3,6 +3,11 @@ Nostalgia Games
 
 These are some games I created back in high school. 
 
+
+Code licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0). 
+
+Graphics licensed under CC BY-NC 3.0 (http://creativecommons.org/licenses/by-nc/3.0/).
+                    
 Note that I wasn't using maven back in the day; I've added a pom to hopefully simplify the building process. 
 
     mvn clean compile
